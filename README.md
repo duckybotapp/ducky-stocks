@@ -1,30 +1,38 @@
-# 🦆 Ducky Stocks
+[![Ducky Stocks, the green duck with binoculars at its research desk](assets/ducky-stocks.jpg)](https://duckybot.app/en/)
 
-[简体中文](README.zh-CN.md)
+**[Browse the Ducky 300 for free](https://duckybot.app/en/app/#/watchlist?scope=ducky&columns=all)**　·　[Signal Studio](https://duckybot.app/en/signal-studio-guide/)　·　[简体中文](README.zh-CN.md)
 
-Ducky is free to use for U.S. stock research. Pick a company to see what its executives disclosed, how funds changed their holdings and what people said about it on video. Open the filings and videos to check for yourself.
+# Follow a stock back to the source
 
-**[Browse the Ducky 300](https://duckybot.app/en/app/#/watchlist?scope=ducky&columns=all)** · **[Explore NVIDIA](https://duckybot.app/en/app/#/stock/NVDA)**
+Who sold shares? What did a fund own last quarter? What did a YouTuber actually say? Ducky brings the filing, the chart and the original video together on one stock page.
 
-## Try it with NVIDIA
+Browse the Ducky 300 and preview up to ten different detail pages per browser without an account. A free account adds a personal watchlist, creator follows and Signal Studio. No card or subscription required.
 
-| Question | Where to look |
-| --- | --- |
-| What did a fund hold at quarter-end? | Atreides Management filed its September 30, 2026 holdings on November 16. You can compare its NVIDIA position with the previous quarter. [Fund holdings](https://duckybot.app/en/app/#/stock/NVDA?tab=funds) · [SEC filing](https://www.sec.gov/Archives/edgar/data/1777813/000177781326000013/0001777813-26-000013-index.html) |
-| When did an insider trade? | NVIDIA executive Timothy S. Teter reported a November 19 transaction in a Form 4 filed November 23, 2026. Ducky marks the trade date on the chart. [Stock chart](https://duckybot.app/en/app/#/stock/NVDA?tab=trail) · [Form 4](https://www.sec.gov/Archives/edgar/data/1045810/000169684126000016/0001696841-26-000016-index.htm) |
-| What did someone actually say? | Ducky’s November 25, 2026 record for Parkev Tatevosian links to the relevant moment in his NVIDIA video. [Creator views](https://duckybot.app/en/app/#/stock/NVDA?tab=creators) · [Watch from 0:23](https://www.youtube.com/watch?v=hOUk-GEHdM8&t=23s) |
+## A closer look at NVIDIA
 
-OpenStock covers nine markets and publishes a terminal you can host yourself. Its public NVIDIA page pairs a chart with annual and quarterly reports. Ducky puts insider trades, fund holdings and dated commentary on the same stock page. [OpenStock’s features](https://openstock-ods.vercel.app/#inside) · [NVIDIA on OpenStock](https://openstock-ods.vercel.app/s/NVDA)
+For a guest preview, open the Ducky 300 and select **NVDA**. The following links also work from your Ducky account. [Open the public stock table](https://duckybot.app/en/app/#/watchlist?scope=ducky&columns=all)
 
-## What can I use for free?
+**Start with the trade.** NVIDIA executive Timothy S. Teter sold shares on November 19, 2026. He filed the Form 4 on November 23. Select the marker on the chart to see both dates. [Open NVIDIA](https://duckybot.app/en/app/#/stock/NVDA?tab=trail) · [Read the SEC filing](https://www.sec.gov/Archives/edgar/data/1045810/000169684126000016/0001696841-26-000016-index.htm)
 
-- **Without an account**, compare stocks in the Ducky 300 and open stock previews. You can preview up to ten distinct detail pages per browser.
-- **With a free account**, save your watchlist, follow finance creators and use Signal Studio. You don’t need a card or a subscription.
-- **In Signal Studio**, try a rule such as daily RSI below 30. Check which stocks matched in the past and how they moved against SPY. Turn on an alert if you want to track future matches. Historical results are simulations. [Open Signal Studio](https://duckybot.app/en/app/#/alerts) · [Read the guide](https://duckybot.app/en/signal-studio-guide/)
+[![NVIDIA candlesticks with the November 19 insider sales selected. The tooltip also shows the November 23 filing date.](assets/nvda-chart-en.jpg)](https://duckybot.app/en/app/#/stock/NVDA?tab=trail)
 
-## Look up filings from your terminal
+**Hear the original argument.** On November 25, Parkev Tatevosian discussed his estimate of NVIDIA’s fair value. The link on his card starts the video at 0:23, so you can hear how he described it. [NVIDIA creator views](https://duckybot.app/en/app/#/stock/NVDA?tab=creators) · [Play from 0:23](https://www.youtube.com/watch?v=hOUk-GEHdM8&t=23s)
 
-The Python example reads up to three records from Ducky’s public disclosure archive. It prints the original filing links and the archive cutoff. The public archive has a five-day delay. You need Python 3 and an internet connection.
+[![Parkev Tatevosian’s dated NVIDIA card with his portrait and the link to the video at 0:23.](assets/nvda-view-en.jpg)](https://www.youtube.com/watch?v=hOUk-GEHdM8&t=23s)
+
+**Check what a fund held.** Atreides Management filed its September 30 holdings on November 16, 2026. Compare its NVIDIA position with the previous quarter, then open its 13F. [Fund holdings](https://duckybot.app/en/app/#/stock/NVDA?tab=funds) · [Original 13F](https://www.sec.gov/Archives/edgar/data/1777813/000177781326000013/0001777813-26-000013-index.html)
+
+## Try a rule in Signal Studio
+
+Try **“Alert me when a stock on my watchlist has a daily RSI below 30.”** See which stocks matched in the past and how they moved against SPY. Turn on alerts to follow future matches. Signal Studio comes with every free account. [Open Signal Studio](https://duckybot.app/en/app/#/alerts) · [Read the guide](https://duckybot.app/en/signal-studio-guide/)
+
+[![The Signal Studio rule picker lists watchlist RSI, insider buys, market conditions and combinations.](assets/signal-studio-en.webp)](https://duckybot.app/en/signal-studio-guide/)
+
+*The rule picker shows example conditions. Signal Studio simulates historical results.*
+
+## Run the filing example
+
+Python 3 and an internet connection are all you need. The example prints up to three SEC filing links and the cutoff date for Ducky’s public archive. This archive has a five-day delay.
 
 ```sh
 git clone https://github.com/duckybotapp/ducky-stocks.git
@@ -33,8 +41,17 @@ python3 examples/filings.py NVDA --kind insider
 python3 examples/filings.py NVDA --kind 13f
 ```
 
-Substitute another ticker to check its filings. The example uses the Python standard library and runs without an account or API key. The code is available under the MIT License. Ducky hosts the research service. Source records remain subject to their publishers’ terms. [Example code](examples/filings.py) · [License](LICENSE) · [Ducky terms](https://duckybot.app/en/terms/)
+Replace `NVDA` with another ticker. The script uses the Python standard library and needs no API key. The MIT License covers the example code. Ducky hosts the research service. The original records follow their publishers’ terms. [Example code](examples/filings.py) · [License](LICENSE) · [Ducky terms](https://duckybot.app/en/terms/)
 
-## Become a backer
+<details>
+<summary><strong>How does Ducky compare with OpenStock?</strong></summary>
 
-If Ducky saves you time, you can help keep it running with a one-time or monthly contribution. Every free account includes Signal Studio. [Back Ducky on Buy Me a Coffee](https://buymeacoffee.com/duckybot)
+OpenStock covers nine markets and lets you host its terminal yourself. Its NVIDIA page pairs the chart with quarterly and annual reports. On Ducky, select a trade to see its filing date. The same stock page links to fund holdings and the exact moment in a creator’s video. [Inside OpenStock](https://openstock-ods.vercel.app/#inside) · [NVIDIA on OpenStock](https://openstock-ods.vercel.app/s/NVDA) · [NVIDIA on Ducky](https://duckybot.app/en/app/#/stock/NVDA)
+
+</details>
+
+## Back Ducky
+
+<a href="https://buymeacoffee.com/duckybot"><img align="right" width="76" height="76" alt="Ducky holding a cup of coffee" src="assets/ducky-coffee.webp"></a>
+
+If Ducky saved you an afternoon of digging through filings, you can buy the duck a coffee. Backers help keep the research free with a one-time or monthly contribution. Everyone with a free account can use Signal Studio. [Become a backer](https://buymeacoffee.com/duckybot)
