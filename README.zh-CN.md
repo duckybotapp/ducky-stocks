@@ -1,6 +1,6 @@
 [![Ducky Stocks 美股小鸭子拿着望远镜，坐在研究卡片旁](assets/ducky-stocks.jpg)](https://duckybot.app/zh/)
 
-**[免费逛 Ducky 300 股票表](https://duckybot.app/zh/app/#/watchlist?scope=ducky&columns=all)**　·　[信号工坊](https://duckybot.app/zh/signal-studio-guide/)　·　[English](README.md)
+**[免费逛 Ducky 300](https://duckybot.app/zh/app/#/watchlist?scope=ducky&columns=all)** · [信号工坊](https://duckybot.app/zh/signal-studio-guide/) · [English](README.md)
 
 # 从一只美股，查回一手资料
 
@@ -14,7 +14,7 @@
 
 **高管哪天卖的？** 英伟达高管 Timothy S. Teter 在 2026 年 11 月 19 日卖出股票，11 月 23 日才提交 Form 4。点开图上的标记，就能看到每笔交易，以及交易和披露各是哪天。[看英伟达的交易图](https://duckybot.app/zh/app/#/stock/NVDA?tab=trail) · [读 SEC 申报原件](https://www.sec.gov/Archives/edgar/data/1045810/000169684126000016/0001696841-26-000016-index.htm)
 
-[![英伟达 K 线图，选中的 11 月 19 日标记列出了当天的卖出记录和 11 月 23 日的披露日期。](assets/nvda-chart-zh.jpg)](https://duckybot.app/zh/app/#/stock/NVDA?tab=trail)
+![英伟达 K 线图，选中的 11 月 19 日标记列出了当天的卖出记录和 11 月 23 日的披露日期。](assets/nvda-chart-zh.jpg)
 
 **博主当时怎么说的？** 11 月 25 日，Parkev Tatevosian 谈到了他给英伟达算的公允价值。点头像旁这条记录里的「原视频」，就从第 23 秒开始听他本人怎么说。[英伟达的博主观点](https://duckybot.app/zh/app/#/stock/NVDA?tab=creators) · [从 0:23 播放](https://www.youtube.com/watch?v=hOUk-GEHdM8&t=23s)
 

@@ -1,6 +1,6 @@
 [![Ducky Stocks, the green duck with binoculars at its research desk](assets/ducky-stocks.jpg)](https://duckybot.app/en/)
 
-**[Browse the Ducky 300 for free](https://duckybot.app/en/app/#/watchlist?scope=ducky&columns=all)**　·　[Signal Studio](https://duckybot.app/en/signal-studio-guide/)　·　[简体中文](README.zh-CN.md)
+**[Browse stocks for free](https://duckybot.app/en/app/#/watchlist?scope=ducky&columns=all)** · [Signal Studio](https://duckybot.app/en/signal-studio-guide/) · [中文](README.zh-CN.md)
 
 # Follow a stock back to the source
 
@@ -14,7 +14,7 @@ For a guest preview, open the Ducky 300 and select **NVDA**. The following links
 
 **Start with the trade.** NVIDIA executive Timothy S. Teter sold shares on November 19, 2026. He filed the Form 4 on November 23. Select the marker on the chart to see both dates. [Open NVIDIA](https://duckybot.app/en/app/#/stock/NVDA?tab=trail) · [Read the SEC filing](https://www.sec.gov/Archives/edgar/data/1045810/000169684126000016/0001696841-26-000016-index.htm)
 
-[![NVIDIA candlesticks with the November 19 insider sales selected. The tooltip also shows the November 23 filing date.](assets/nvda-chart-en.jpg)](https://duckybot.app/en/app/#/stock/NVDA?tab=trail)
+![NVIDIA candlesticks with the November 19 insider sales selected. The tooltip also shows the November 23 filing date.](assets/nvda-chart-en.jpg)
 
 **Hear the original argument.** On November 25, Parkev Tatevosian discussed his estimate of NVIDIA’s fair value. The link on his card starts the video at 0:23, so you can hear how he described it. [NVIDIA creator views](https://duckybot.app/en/app/#/stock/NVDA?tab=creators) · [Play from 0:23](https://www.youtube.com/watch?v=hOUk-GEHdM8&t=23s)
 
